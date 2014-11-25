@@ -12,6 +12,14 @@ spritesmithEngineTest.run({
 // Define custom tests
 var spritesmithUtils = spritesmithEngineTest.spritesmithUtils;
 describe('pixelsmith', function () {
+  describe('loading a GIF image', function () {
+    describe('when rendered', function () {
+      it.skip('used the first frame of the GIF image', function () {
+        // TODO: Complete me
+      });
+    });
+  });
+
   describe('working with multiple images', function () {
     describe('outputting a jpeg image', function () {
       // Render a jpeg image
