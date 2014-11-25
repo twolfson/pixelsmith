@@ -15,7 +15,7 @@ spritesmithEngineTest.run({
 var spritesmithUtils = spritesmithEngineTest.spritesmithUtils;
 describe('pixelsmith', function () {
   describe('loading a GIF image', function () {
-    var gifFilepaths = [__dirname + '/test-files/sprite1.gif'];
+    var gifFilepaths = [__dirname + '/test-files/sprite3.gif'];
     spritesmithUtils.interpretImages(pixelsmith, gifFilepaths);
 
     describe('when rendered', function () {
