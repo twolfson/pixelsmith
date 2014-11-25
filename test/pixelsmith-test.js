@@ -42,15 +42,34 @@ describe('pixelsmith', function () {
         spritesmithUtils.debugResult('debug.jpg');
       }
 
-      it.only('outputs a jpeg image', function () {
+      it('outputs a jpeg image', function () {
         var actualImg = fs.readFileSync(__dirname + '/expected-files/multiple.jpg', 'binary');
         assert.strictEqual(this.result, actualImg);
       });
     });
 
-    describe.skip('outputting a gif image', function () {
+    describe('outputting a gif image', function () {
+      // Render a jpeg image
+      var multipleImages = spritesmithEngineTest.config.multipleImages;
+      spritesmithUtils.interpretImages(pixelsmith, multipleImages.filepaths);
+      spritesmithUtils.renderCanvas({
+        engine: pixelsmith,
+        width: multipleImages.width,
+        height: multipleImages.height,
+        coordinateArr: multipleImages.coordinateArr,
+        exportParams: {
+          format: 'gif'
+        }
+      });
+
+      // Allow for debugging
+      if (process.env.TEST_DEBUG) {
+        spritesmithUtils.debugResult('debug.gif');
+      }
+
       it('outputs a gif image', function () {
-        // TOOD: Complete me
+        var actualImg = fs.readFileSync(__dirname + '/expected-files/multiple.gif', 'binary');
+        assert.strictEqual(this.result, actualImg);
       });
     });
   });
