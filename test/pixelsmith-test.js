@@ -22,8 +22,8 @@ describe('pixelsmith', function () {
       // Render a gif image
       spritesmithUtils.renderCanvas({
         engine: pixelsmith,
-        width: 50,
-        height: 50,
+        width: 100,
+        height: 200,
         coordinateArr: [{x: 0, y: 0}],
         exportParams: {
           format: 'gif'
