@@ -1,8 +1,8 @@
 {
-  "name": "pngsmith",
-  "description": "png engine for spritesmith",
-  "version": "0.1.3",
-  "homepage": "https://github.com/twolfson/pngsmith",
+  "name": "pixelsmith",
+  "description": "Node based engine for spritesmith",
+  "version": "1.0.0",
+  "homepage": "https://github.com/twolfson/pixelsmith",
   "author": {
     "name": "Todd Wolfson",
     "email": "todd@twolfson.com",
@@ -10,44 +10,42 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/twolfson/pngsmith.git"
+    "url": "git://github.com/twolfson/pixelsmith.git"
   },
   "bugs": {
-    "url": "https://github.com/twolfson/pngsmith/issues"
+    "url": "https://github.com/twolfson/pixelsmith/issues"
   },
   "licenses": [
     {
       "type": "UNLICENSE",
-      "url": "https://github.com/twolfson/pngsmith/blob/master/UNLICENSE"
+      "url": "https://github.com/twolfson/pixelsmith/blob/master/UNLICENSE"
     }
   ],
-  "main": "lib/pngsmith",
+  "main": "lib/pixelsmith",
   "engines": {
     "node": ">= 0.8.0"
   },
   "scripts": {
-    "test": "mocha"
+    "precheck": "twolfson-style precheck lib/ test/",
+    "lint": "twolfson-style lint lib/ test/",
+    "pretest": "twolfson-style install",
+    "test": "npm run precheck && mocha --reporter dot && npm run lint"
   },
-  "dependencies": {
-    "obj-extend": "~0.1.0",
-    "async": "~0.2.7",
-    "ndarray": "~1.0.9",
-    "save-pixels": "~0.3.0",
-    "get-pixels": "~1.0.1",
-    "concat-stream": "~1.2.1"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "chai": "~1.8.1",
-    "grunt": "~0.4.2",
-    "grunt-contrib-jshint": "~0.7.2",
-    "grunt-contrib-watch": "~0.5.3",
+    "jscs": "~1.7.3",
+    "jshint": "~2.5.10",
     "mocha": "~1.21.4",
-    "spritesmith-engine-test": "~2.0.0"
+    "spritesmith-engine-test": "~2.0.0",
+    "twolfson-style": "~1.6.0"
   },
   "keywords": [
-    "pngjs",
-    "png",
     "spritesmith",
+    "pixel",
+    "node",
+    "png",
+    "gif",
+    "jpeg",
     "image",
     "layout",
     "canvas"
