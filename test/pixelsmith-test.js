@@ -4,8 +4,8 @@ var pixelsmith = require('../');
 
 // Override images with png variants
 // TODO: Define as a flag inside of `spritesmith-engine-test`
-spritesmithEngineTest.config.multipleImages = spritesmithEngineTest.config.multiplePngImages;
-spritesmithEngineTest.config.repeatingImages = spritesmithEngineTest.config.repeatingPngImages;
+// spritesmithEngineTest.config.multipleImages = spritesmithEngineTest.config.multiplePngImages;
+// spritesmithEngineTest.config.repeatingImages = spritesmithEngineTest.config.repeatingPngImages;
 
 // Run our test
 spritesmithEngineTest.run({
