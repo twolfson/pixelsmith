@@ -31,7 +31,9 @@
     "pretest": "twolfson-style install",
     "test": "npm run precheck && mocha --reporter dot && npm run lint"
   },
-  "dependencies": {},
+  "dependencies": {
+    "obj-extend": "~0.1.0"
+  },
   "devDependencies": {
     "jscs": "~1.7.3",
     "jshint": "~2.5.10",
