@@ -43,7 +43,7 @@
     "jscs": "~1.7.3",
     "jshint": "~2.5.10",
     "mocha": "~1.21.4",
-    "spritesmith-engine-test": "~2.0.1",
+    "spritesmith-engine-test": "~2.1.0",
     "twolfson-style": "~1.6.0"
   },
   "keywords": [

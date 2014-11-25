@@ -1,4 +1,6 @@
 // Load our dependencies
+var assert = require('assert');
+var fs = require('fs');
 var spritesmithEngineTest = require('spritesmith-engine-test');
 var pixelsmith = require('../');
 
@@ -41,7 +43,8 @@ describe('pixelsmith', function () {
       }
 
       it.only('outputs a jpeg image', function () {
-        // TOOD: Complete me
+        var actualImg = fs.readFileSync(__dirname + '/expected-files/multiple.jpg', 'binary');
+        assert.strictEqual(this.result, actualImg);
       });
     });
 
