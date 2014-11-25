@@ -15,8 +15,27 @@ spritesmithEngineTest.run({
 var spritesmithUtils = spritesmithEngineTest.spritesmithUtils;
 describe('pixelsmith', function () {
   describe('loading a GIF image', function () {
+    var gifFilepaths = [__dirname + '/test-files/sprite1.gif'];
+    spritesmithUtils.interpretImages(pixelsmith, gifFilepaths);
+
     describe('when rendered', function () {
-      it.skip('used the first frame of the GIF image', function () {
+      // Render a gif image
+      spritesmithUtils.renderCanvas({
+        engine: pixelsmith,
+        width: 50,
+        height: 50,
+        coordinateArr: [{x: 0, y: 0}],
+        exportParams: {
+          format: 'gif'
+        }
+      });
+
+      // Allow for debugging
+      if (process.env.TEST_DEBUG) {
+        spritesmithUtils.debugResult('debug.gif');
+      }
+
+      it('used the first frame of the GIF image', function () {
         // TODO: Complete me
       });
     });
