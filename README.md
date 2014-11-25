@@ -16,16 +16,16 @@ Install the module with: `npm install pixelsmith`
 var images = ['img1.jpg', 'img2.png'];
 pixelsmith.createImages(this.images, function handleImages (err, imgs) {
   // Create a canvas to draw onto (200 pixels wide, 300 pixels tall)
-  pixelsmith.createCanvas(200, 200, function (err, canvas) {
+  pixelsmith.createCanvas(200, 200, function handleCanvas (err, canvas) {
     // Add each image at a specific location (upper left corner = {x, y})
     var coordinatesArr = [{x: 0, y: 0}, {x: 50, y: 50}];
-    imgs.forEach(function (img, i) {
+    imgs.forEach(function addImages (img, i) {
       var coordinates = coordinatesArr[i];
       canvas.addImage(img, coordinates.x, coordinates.y);
     }, canvas);
 
     // Export canvas to image
-    canvas['export']({format: 'png'}, function (err, result) {
+    canvas['export']({format: 'png'}, function handleOuput (err, result) {
       result; // Binary string representing a PNG image of the canvas
     });
   });
