@@ -36,7 +36,8 @@ describe('pixelsmith', function () {
       }
 
       it('used the first frame of the GIF image', function () {
-        // TODO: Complete me
+        var actualImg = fs.readFileSync(__dirname + '/expected-files/single.gif', 'binary');
+        assert.strictEqual(this.result, actualImg);
       });
     });
   });
