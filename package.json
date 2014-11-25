@@ -37,7 +37,7 @@
     "get-pixels": "~3.1.0",
     "ndarray": "~1.0.15",
     "obj-extend": "~0.1.0",
-    "save-pixels": "~0.3.0"
+    "save-pixels": "~2.2.0"
   },
   "devDependencies": {
     "jscs": "~1.7.3",
