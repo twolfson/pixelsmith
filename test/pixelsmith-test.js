@@ -94,7 +94,7 @@ describe('pixelsmith', function () {
     });
   });
 
-  describe.only('outputting a spritesheet with a custom background', function () {
+  describe('outputting a spritesheet with a custom background', function () {
     var multipleImages = spritesmithEngineTest.config.multipleImages;
     spritesmithUtils.interpretImages(pixelsmith, multipleImages.filepaths);
 
