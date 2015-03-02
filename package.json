@@ -36,6 +36,7 @@
     "concat-stream": "~1.4.6",
     "get-pixels": "~3.1.0",
     "ndarray": "~1.0.15",
+    "ndarray-fill": "~1.0.1",
     "obj-extend": "~0.1.0",
     "save-pixels": "~2.2.0"
   },
