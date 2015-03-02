@@ -93,4 +93,34 @@ describe('pixelsmith', function () {
       });
     });
   });
+
+  describe('outputting a spritesheet with a custom background', function () {
+    var multipleImages = spritesmithEngineTest.config.multipleImages;
+    spritesmithUtils.interpretImages(pixelsmith, multipleImages.filepaths);
+
+    describe('when rendered', function () {
+      // Render a gif image
+      spritesmithUtils.renderCanvas({
+        engine: pixelsmith,
+        width: 100,
+        height: 200,
+        coordinateArr: [{x: 0, y: 0}],
+        exportParams: {
+          background: [255, 0, 255, 255],
+          format: 'jpeg'
+        }
+      });
+
+      // Allow for debugging
+      if (process.env.TEST_DEBUG) {
+        spritesmithUtils.debugResult('debug-background.jpeg');
+      }
+
+      it('used the expected background', function () {
+        var actualImg = fs.readFileSync(__dirname + '/expected-files/background.jpeg', 'binary');
+        assert.strictEqual(this.result, actualImg);
+      });
+    });
+  });
+
 });
