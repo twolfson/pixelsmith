@@ -37,6 +37,21 @@ This module was built to the specification for all spritesmith modules.
 
 https://github.com/twolfson/spritesmith-engine-test
 
+### canvas\['export'\](options, cb)
+These are options specific `pixelsmith`
+
+- options `Object`
+  - background `Number[]` - `rgba` array of value for background
+    - By default, the background is `[0, 0, 0, 0]` (transparent black)
+    - `[0]` - Red value for background
+      - Can range from 0 to 255
+    - `[1]` - Green value for background
+      - Can range from 0 to 255
+    - `[2]` - Blue value for background
+      - Can range from 0 to 255
+    - `[3]` - Alpha/transparency value for background
+      - Can range from 0 to 255
+
 ## Contributing
 In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint via `npm run lint` and test via `npm test`.
 
