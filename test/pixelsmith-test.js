@@ -122,5 +122,4 @@ describe('pixelsmith', function () {
       });
     });
   });
-
 });
