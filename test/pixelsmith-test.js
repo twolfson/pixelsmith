@@ -94,7 +94,7 @@ describe('pixelsmith', function () {
     });
   });
 
-  describe('outputting a spritesheet with a custom background', function () {
+  describe.only('outputting a spritesheet with a custom background', function () {
     var multipleImages = spritesmithEngineTest.config.multipleImages;
     spritesmithUtils.interpretImages(pixelsmith, multipleImages.filepaths);
 
@@ -102,9 +102,9 @@ describe('pixelsmith', function () {
       // Render a gif image
       spritesmithUtils.renderCanvas({
         engine: pixelsmith,
-        width: 100,
-        height: 200,
-        coordinateArr: [{x: 0, y: 0}],
+        width: multipleImages.width,
+        height: multipleImages.height,
+        coordinateArr: multipleImages.coordinateArr,
         exportParams: {
           background: [255, 0, 255, 255],
           format: 'jpeg'
