@@ -35,6 +35,7 @@
     "async": "~0.9.0",
     "concat-stream": "~1.4.6",
     "get-pixels": "~3.1.0",
+    "mime-sniffer": "0.0.3",
     "ndarray": "~1.0.15",
     "ndarray-fill": "~1.0.1",
     "obj-extend": "~0.1.0",
