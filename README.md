@@ -14,7 +14,7 @@ Install the module with: `npm install pixelsmith`
 ```js
 // Convert images into pixelsmith objects
 var images = ['img1.jpg', 'img2.png'];
-pixelsmith.createImages(this.images, function handleImages (err, imgs) {
+pixelsmith.createImages(images, function handleImages (err, imgs) {
   // Create a canvas to draw onto (200 pixels wide, 300 pixels tall)
   pixelsmith.createCanvas(200, 200, function handleCanvas (err, canvas) {
     // Add each image at a specific location (upper left corner = {x, y})
