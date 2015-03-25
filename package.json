@@ -1,7 +1,7 @@
 {
   "name": "pixelsmith",
   "description": "Node based engine for spritesmith",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "homepage": "https://github.com/twolfson/pixelsmith",
   "author": {
     "name": "Todd Wolfson",
