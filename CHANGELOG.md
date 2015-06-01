@@ -1,4 +1,6 @@
 # pixelsmith changelog
+1.1.2 - Moved from deprecated `licenses` key to `license` in `package.json`
+
 1.1.1 - Fixed example in README via @tmcw in #3
 
 1.1.0 - Added support for custom background. Fixes twolfson/gulp.spritesmith#33
