@@ -15,12 +15,7 @@
   "bugs": {
     "url": "https://github.com/twolfson/pixelsmith/issues"
   },
-  "licenses": [
-    {
-      "type": "UNLICENSE",
-      "url": "https://github.com/twolfson/pixelsmith/blob/master/UNLICENSE"
-    }
-  ],
+  "licenses": "Unlicense",
   "main": "lib/pixelsmith",
   "engines": {
     "node": ">= 0.8.0"
