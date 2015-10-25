@@ -38,7 +38,7 @@ describe('pixelsmith', function () {
 
       it('used the first frame of the GIF image', function () {
         var expectedImg = fs.readFileSync(__dirname + '/expected-files/single.gif');
-        assert.strictEqual(this.resultBuffer, expectedImg);
+        assert.deepEqual(this.resultBuffer, expectedImg);
       });
     });
   });
@@ -66,7 +66,7 @@ describe('pixelsmith', function () {
 
       it('outputs a jpeg image', function () {
         var expectedImg = fs.readFileSync(__dirname + '/expected-files/multiple.jpg');
-        assert.strictEqual(this.resultBuffer, expectedImg);
+        assert.deepEqual(this.resultBuffer, expectedImg);
       });
     });
 
@@ -92,7 +92,7 @@ describe('pixelsmith', function () {
 
       it('outputs a gif image', function () {
         var expectedImg = fs.readFileSync(__dirname + '/expected-files/multiple.gif');
-        assert.strictEqual(this.resultBuffer, expectedImg);
+        assert.deepEqual(this.resultBuffer, expectedImg);
       });
     });
   });
@@ -122,7 +122,7 @@ describe('pixelsmith', function () {
 
       it('used the expected background', function () {
         var expectedImg = fs.readFileSync(__dirname + '/expected-files/background.jpeg');
-        assert.strictEqual(this.resultBuffer, expectedImg);
+        assert.deepEqual(this.resultBuffer, expectedImg);
       });
     });
   });
