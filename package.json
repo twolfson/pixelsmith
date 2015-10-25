@@ -28,7 +28,6 @@
   },
   "dependencies": {
     "async": "~0.9.0",
-    "concat-stream": "~1.4.6",
     "get-pixels": "~3.2.3",
     "ndarray": "~1.0.15",
     "ndarray-fill": "~1.0.1",
