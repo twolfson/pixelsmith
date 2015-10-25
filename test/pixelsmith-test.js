@@ -29,6 +29,7 @@ describe.skip('pixelsmith', function () {
           format: 'gif'
         }
       });
+      spritesmithUtils.concatResultStream();
 
       // Allow for debugging
       if (process.env.TEST_DEBUG) {
@@ -36,8 +37,8 @@ describe.skip('pixelsmith', function () {
       }
 
       it('used the first frame of the GIF image', function () {
-        var actualImg = fs.readFileSync(__dirname + '/expected-files/single.gif');
-        assert.strictEqual(this.result, actualImg);
+        var expectedImg = fs.readFileSync(__dirname + '/expected-files/single.gif');
+        assert.strictEqual(this.resultBuffer, expectedImg);
       });
     });
   });
@@ -56,6 +57,7 @@ describe.skip('pixelsmith', function () {
           format: 'jpeg'
         }
       });
+      spritesmithUtils.concatResultStream();
 
       // Allow for debugging
       if (process.env.TEST_DEBUG) {
@@ -63,8 +65,8 @@ describe.skip('pixelsmith', function () {
       }
 
       it('outputs a jpeg image', function () {
-        var actualImg = fs.readFileSync(__dirname + '/expected-files/multiple.jpg');
-        assert.strictEqual(this.result, actualImg);
+        var expectedImg = fs.readFileSync(__dirname + '/expected-files/multiple.jpg');
+        assert.strictEqual(this.resultBuffer, expectedImg);
       });
     });
 
@@ -81,6 +83,7 @@ describe.skip('pixelsmith', function () {
           format: 'gif'
         }
       });
+      spritesmithUtils.concatResultStream();
 
       // Allow for debugging
       if (process.env.TEST_DEBUG) {
@@ -88,8 +91,8 @@ describe.skip('pixelsmith', function () {
       }
 
       it('outputs a gif image', function () {
-        var actualImg = fs.readFileSync(__dirname + '/expected-files/multiple.gif');
-        assert.strictEqual(this.result, actualImg);
+        var expectedImg = fs.readFileSync(__dirname + '/expected-files/multiple.gif');
+        assert.strictEqual(this.resultBuffer, expectedImg);
       });
     });
   });
@@ -110,6 +113,7 @@ describe.skip('pixelsmith', function () {
           format: 'jpeg'
         }
       });
+      spritesmithUtils.concatResultStream();
 
       // Allow for debugging
       if (process.env.TEST_DEBUG) {
@@ -117,8 +121,8 @@ describe.skip('pixelsmith', function () {
       }
 
       it('used the expected background', function () {
-        var actualImg = fs.readFileSync(__dirname + '/expected-files/background.jpeg');
-        assert.strictEqual(this.result, actualImg);
+        var expectedImg = fs.readFileSync(__dirname + '/expected-files/background.jpeg');
+        assert.strictEqual(this.resultBuffer, expectedImg);
       });
     });
   });
