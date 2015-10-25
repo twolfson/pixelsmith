@@ -13,7 +13,7 @@ spritesmithEngineTest.run({
 
 // Define custom tests
 var spritesmithUtils = spritesmithEngineTest.spritesmithUtils;
-describe.skip('pixelsmith', function () {
+describe('pixelsmith', function () {
   describe('loading a GIF image', function () {
     var gifFilepaths = [__dirname + '/test-files/sprite3.gif'];
     spritesmithUtils.interpretImages(pixelsmith, gifFilepaths);
