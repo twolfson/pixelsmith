@@ -1,4 +1,6 @@
 # pixelsmith changelog
+1.2.1 - Added `foundry` for release
+
 1.2.0 - Upgraded to get-pixels@3.2.3 to add better PNG support
 
 1.1.2 - Moved from deprecated `licenses` key to `license` in `package.json`
