@@ -1,4 +1,6 @@
 # pixelsmith changelog
+1.2.2 - Updated supported node versions to `>= 0.10.0`
+
 1.2.1 - Added `foundry` for release
 
 1.2.0 - Upgraded to get-pixels@3.2.3 to add better PNG support
