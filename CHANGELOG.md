@@ -1,4 +1,6 @@
 # pixelsmith changelog
+1.3.1 - Removed bad require
+
 1.3.0 - Cleaned up technical debt (e.g. YAGNI on `exporters`)
 
 1.2.2 - Updated supported node versions to `>= 0.10.0`
