@@ -33,24 +33,24 @@ pixelsmith.createImages(images, function handleImages (err, imgs) {
 ```
 
 ## Documentation
-This module was built to the specification for all spritesmith modules.
+This module was built to the specification for spritesmith engines.
 
-https://github.com/twolfson/spritesmith-engine-test
+https://github.com/twolfson/spritesmith-engine-spec
 
-### canvas\['export'\](options, cb)
-These are options specific `pixelsmith`
+### `canvas.export(options, cb)`
+Our `export` method provides support for the following options:
 
 - options `Object`
-  - background `Number[]` - `rgba` array of value for background
-    - By default, the background is `[0, 0, 0, 0]` (transparent black)
-    - `[0]` - Red value for background
-      - Can range from 0 to 255
-    - `[1]` - Green value for background
-      - Can range from 0 to 255
-    - `[2]` - Blue value for background
-      - Can range from 0 to 255
-    - `[3]` - Alpha/transparency value for background
-      - Can range from 0 to 255
+    - background `Number[]` - `rgba` array of value for background
+        - By default, the background is `[0, 0, 0, 0]` (transparent black)
+        - `[0]` - Red value for background
+            - Can range from 0 to 255
+        - `[1]` - Green value for background
+            - Can range from 0 to 255
+        - `[2]` - Blue value for background
+            - Can range from 0 to 255
+        - `[3]` - Alpha/transparency value for background
+            - Can range from 0 to 255
 
 ## Contributing
 In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint via `npm run lint` and test via `npm test`.
