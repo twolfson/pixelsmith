@@ -1,4 +1,6 @@
 # pixelsmith changelog
+1.3.2 - Upgraded to `spritesmith-engine-test@3.0.0` to clean up technical debt
+
 1.3.1 - Removed bad require
 
 1.3.0 - Cleaned up technical debt (e.g. YAGNI on `exporters`)
