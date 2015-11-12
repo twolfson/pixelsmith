@@ -35,7 +35,7 @@ pixelsmith.createImages(images, function handleImages (err, imgs) {
 ## Documentation
 This module was built to the specification for spritesmith engines.
 
-https://github.com/twolfson/spritesmith-engine-spec
+https://github.com/twolfson/spritesmith-engine-spec/tree/1.1.0
 
 **Specification version:** 1.1.0
 
