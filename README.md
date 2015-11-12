@@ -19,20 +19,27 @@ var Pixelsmith = require('pixelsmith');
 var pixelsmith = new Pixelsmith();
 
 // Interpret some images from disk
-var imgs = pixelsmith.createImages(['img1.jpg', 'img2.png']);
-imgs[0].width; // 50 (pixels)
-imgs[0].height; // 100 (pixels)
+pixelsmith.createImages(['img1.jpg', 'img2.png'], function handleImages (err, imgs) {
+  // If there was an error, throw it
+  if (err) {
+    throw err;
+  }
 
-// Create a canvas that fits our images (200px wide, 300px tall)
-var canvas = pixelsmith.createCanvas(200, 300);
+  // We recieve images in the same order they were given
+  imgs[0].width; // 50 (pixels)
+  imgs[0].height; // 100 (pixels)
 
-// Add the images to our canvas (at x=0, y=0 and x=50, y=100 respectively)
-canvas.addImage(imgs[0], 0, 0);
-canvas.addImage(imgs[1], 50, 100);
+  // Create a canvas that fits our images (200px wide, 300px tall)
+  var canvas = pixelsmith.createCanvas(200, 300);
 
-// Export canvas to image
-canvas['export']({format: 'png'}, function handleOuput (err, result) {
-  result; // Binary string representing a PNG image of the canvas
+  // Add the images to our canvas (at x=0, y=0 and x=50, y=100 respectively)
+  canvas.addImage(imgs[0], 0, 0);
+  canvas.addImage(imgs[1], 50, 100);
+
+  // Export canvas to image
+  canvas['export']({format: 'png'}, function handleOuput (err, result) {
+    result; // Binary string representing a PNG image of the canvas
+  });
 });
 ```
 
