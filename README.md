@@ -12,32 +12,32 @@ This can be used for constructing a canvas, placing images on it, and extracting
 Install the module with: `npm install pixelsmith`
 
 ```js
-// Convert images into pixelsmith objects
-var images = ['img1.jpg', 'img2.png'];
-pixelsmith.createImages(images, function handleImages (err, imgs) {
-  // Create a canvas to draw onto (200 pixels wide, 300 pixels tall)
-  pixelsmith.createCanvas(200, 200, function handleCanvas (err, canvas) {
-    // Add each image at a specific location (upper left corner = {x, y})
-    var coordinatesArr = [{x: 0, y: 0}, {x: 50, y: 50}];
-    imgs.forEach(function addImages (img, i) {
-      var coordinates = coordinatesArr[i];
-      canvas.addImage(img, coordinates.x, coordinates.y);
-    }, canvas);
+// Load in our dependencies
+var Pixelsmith = require('pixelsmith');
 
-    // Export canvas to image
-    canvas['export']({format: 'png'}, function handleOuput (err, result) {
-      result; // Binary string representing a PNG image of the canvas
-    });
-  });
+// Create a new engine
+var pixelsmith = new Pixelsmith();
+
+// Generate some images and a canvas (200px wide, 300px tall)
+var imgs = pixelsmith.createImages(['img1.jpg', 'img2.png']);
+var canvas = pixelsmith.createCanvas(200, 300);
+
+// Add the images to our canvas (at x=0, y=0 and x=50, y=100 respectively)
+canvas.addImage(imgs[0], 0, 0);
+canvas.addImage(imgs[1], 50, 100);
+
+// Export canvas to image
+canvas['export']({format: 'png'}, function handleOuput (err, result) {
+  result; // Binary string representing a PNG image of the canvas
 });
 ```
 
 ## Documentation
 This module was built to the specification for spritesmith engines.
 
-**Specification version:** 1.1.0
+**Specification version:** 2.0.0
 
-https://github.com/twolfson/spritesmith-engine-spec/tree/1.1.0
+https://github.com/twolfson/spritesmith-engine-spec/tree/2.0.0
 
 ### `canvas.export(options, cb)`
 Our `export` method provides support for the following options:
