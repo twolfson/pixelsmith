@@ -37,6 +37,8 @@ This module was built to the specification for spritesmith engines.
 
 https://github.com/twolfson/spritesmith-engine-spec
 
+**Specification version:** 1.1.0
+
 ### `canvas.export(options, cb)`
 Our `export` method provides support for the following options:
 
