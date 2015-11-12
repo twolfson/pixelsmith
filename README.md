@@ -18,8 +18,12 @@ var Pixelsmith = require('pixelsmith');
 // Create a new engine
 var pixelsmith = new Pixelsmith();
 
-// Generate some images and a canvas (200px wide, 300px tall)
+// Interpret some images from disk
 var imgs = pixelsmith.createImages(['img1.jpg', 'img2.png']);
+imgs[0].width; // 50 (pixels)
+imgs[0].height; // 100 (pixels)
+
+// Create a canvas that fits our images (200px wide, 300px tall)
 var canvas = pixelsmith.createCanvas(200, 300);
 
 // Add the images to our canvas (at x=0, y=0 and x=50, y=100 respectively)
