@@ -47,14 +47,8 @@
   },
   "keywords": [
     "spritesmith",
-    "pixel",
-    "node",
-    "png",
-    "gif",
-    "jpeg",
     "image",
-    "layout",
-    "canvas"
+    "spritesmith-engine"
   ],
   "foundry": {
     "releaseCommands": [
