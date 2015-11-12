@@ -2,26 +2,26 @@
 var assert = require('assert');
 var fs = require('fs');
 var spritesmithEngineTest = require('spritesmith-engine-test');
-var pixelsmith = require('../');
+var Pixelsmith = require('../');
 
 // Run our test
 // DEV: This covers png and jpeg inputs
 spritesmithEngineTest.run({
-  engine: pixelsmith,
+  engine: Pixelsmith,
   engineName: 'pixelsmith'
 });
 
 // Define custom tests
 var spritesmithUtils = spritesmithEngineTest.spritesmithUtils;
 describe('pixelsmith', function () {
+  spritesmithUtils.createEngine(Pixelsmith);
   describe('outputting a spritesheet with a custom background', function () {
     var multiplePngImages = spritesmithEngineTest.config.multiplePngImages;
-    spritesmithUtils.interpretImages(pixelsmith, multiplePngImages.filepaths);
+    spritesmithUtils.interpretImages(multiplePngImages.filepaths);
 
     describe('when rendered', function () {
       // Render a gif image
       spritesmithUtils.renderCanvas({
-        engine: pixelsmith,
         width: multiplePngImages.width,
         height: multiplePngImages.height,
         coordinateArr: multiplePngImages.coordinateArr,
