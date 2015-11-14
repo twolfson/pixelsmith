@@ -49,7 +49,7 @@ This module was built to the specification for spritesmith engines.
 
 https://github.com/twolfson/spritesmith-engine-spec/tree/2.0.0
 
-### `canvas.export(options, cb)`
+### `canvas.export(options)`
 Our `export` method provides support for the following options:
 
 - options `Object`
