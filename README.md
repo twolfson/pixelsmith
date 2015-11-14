@@ -37,9 +37,8 @@ pixelsmith.createImages(['img1.jpg', 'img2.png'], function handleImages (err, im
   canvas.addImage(imgs[1], 50, 100);
 
   // Export canvas to image
-  canvas['export']({format: 'png'}, function handleOuput (err, result) {
-    result; // Binary string representing a PNG image of the canvas
-  });
+  var resultStream = canvas['export']({format: 'png'});
+  resultStream; // Readable stream outputting PNG image of the canvas
 });
 ```
 
