@@ -37,8 +37,8 @@ describe('pixelsmith', function () {
       }
 
       it('used the expected background', function () {
-        var actualImg = fs.readFileSync(__dirname + '/expected-files/background.jpeg', 'binary');
-        assert.strictEqual(this.result, actualImg);
+        var actualImg = fs.readFileSync(__dirname + '/expected-files/background.jpeg');
+        assert.deepEqual(this.result, actualImg);
       });
     });
   });
