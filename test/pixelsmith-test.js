@@ -17,7 +17,7 @@ describe('pixelsmith', function () {
   spritesmithUtils.createEngine(Pixelsmith);
   describe('outputting a spritesheet with a custom background', function () {
     var multiplePngImages = spritesmithEngineTest.config.multiplePngImages;
-    spritesmithUtils.interpretImages(multiplePngImages.filepaths);
+    spritesmithUtils.interpretStringImages(multiplePngImages.filepaths);
 
     describe('when rendered', function () {
       // Render a gif image
