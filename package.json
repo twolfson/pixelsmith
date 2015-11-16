@@ -32,7 +32,8 @@
     "ndarray": "~1.0.15",
     "ndarray-fill": "~1.0.1",
     "obj-extend": "~0.1.0",
-    "save-pixels": "~2.2.0"
+    "save-pixels": "~2.2.0",
+    "vinyl": "~1.1.0"
   },
   "devDependencies": {
     "foundry": "~4.3.2",
