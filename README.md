@@ -49,6 +49,14 @@ This module was built to the specification for spritesmith engines.
 
 https://github.com/twolfson/spritesmith-engine-spec/tree/2.0.0
 
+### `engine.createImages(images, cb)`
+Our `createImages` methods supports the following types of images:
+
+- image `String` - Filepath to image
+- image `Object` - Vinyl object with buffer for image (uses buffer)
+- image `Object` - Vinyl object with stream for image (uses stream)
+- image `Object` - Vinyl object with `null` for image (reads buffer from provided filepath)
+
 ### `canvas.export(options)`
 Our `export` method provides support for the following options:
 
