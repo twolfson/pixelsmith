@@ -1,4 +1,6 @@
 # pixelsmith changelog
+2.0.0 - Upgraded to `spritesmith-engine-spec@2.0.0`
+
 1.3.4 - Added `specVersion` support and `spritesmith-engine` keyword
 
 1.3.3 - Updated documentation to be a little cleaner and link to `spritesmith-engine-spec`
