@@ -34,7 +34,7 @@
     "ndarray": "~1.0.15",
     "ndarray-fill": "~1.0.1",
     "obj-extend": "~0.1.0",
-    "save-pixels": "~2.2.0",
+    "save-pixels": "~2.3.0",
     "vinyl-file": "~1.3.0"
   },
   "devDependencies": {
