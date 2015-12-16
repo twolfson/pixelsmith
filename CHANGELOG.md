@@ -1,4 +1,6 @@
 # pixelsmith changelog
+2.0.1 - Upgraded to `save-pixels@2.3.0` to resolve `pngjs2` deprecation warning. Fixes #6
+
 2.0.0 - Upgraded to `spritesmith-engine-spec@2.0.0`
 
 1.3.4 - Added `specVersion` support and `spritesmith-engine` keyword
