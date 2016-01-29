@@ -71,7 +71,8 @@ Our `export` method provides support for the following options:
             - Can range from 0 to 255
         - `[3]` - Alpha/transparency value for background
             - Can range from 0 to 255
-    - quality `Number` - quality percentage of jpeg output from 0 to 100
+    - quality `Number` - Optional quality percentage for JPEG images
+        - This value can range from 0 to 100
 
 ## Contributing
 In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint via `npm run lint` and test via `npm test`.
