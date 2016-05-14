@@ -1,4 +1,6 @@
 # pixelsmith changelog
+2.1.1 - Upgraded to `get-pixels@3.3.0` via @BS-Harou in #9
+
 2.1.0 - Added `quality` support for JPEGs
 
 2.0.1 - Upgraded to `save-pixels@2.3.0` to resolve `pngjs2` deprecation warning. Fixes #6
