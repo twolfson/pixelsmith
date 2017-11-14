@@ -1,4 +1,6 @@
 # pixelsmith changelog
+2.1.3 - Replaced Gratipay with support me page
+
 2.1.2 - Added file size check. Fixes gulp.spritesmith#131
 
 2.1.1 - Upgraded to `get-pixels@3.3.0` via @BS-Harou in #9
