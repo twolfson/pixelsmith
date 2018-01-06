@@ -18,7 +18,7 @@
   "licenses": "Unlicense",
   "main": "lib/engine",
   "engines": {
-    "node": ">= 0.10.0"
+    "node": ">= 4.0.0"
   },
   "scripts": {
     "precheck": "twolfson-style precheck lib/ test/",
