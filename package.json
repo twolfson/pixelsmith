@@ -1,5 +1,5 @@
 {
-  "name": "pixelsmith",
+  "name": "pixelsmith_patch-1",
   "description": "Node based engine for spritesmith",
   "version": "2.2.1",
   "homepage": "https://github.com/twolfson/pixelsmith",
@@ -10,10 +10,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/twolfson/pixelsmith.git"
+    "url": "https://github.com/liupishui/pixelsmith.git"
   },
   "bugs": {
-    "url": "https://github.com/twolfson/pixelsmith/issues"
+    "url": "https://github.com/liupishui/pixelsmith/issues"
   },
   "licenses": "Unlicense",
   "main": "lib/engine",
