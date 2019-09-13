@@ -1,4 +1,6 @@
 # pixelsmith changelog
+2.4.1 - Removed accidental double callback from `getPixels`
+
 2.4.0 - Added filepath info to when invalid file extension loaded. Fixes #16
 
 2.3.0 - Removed `ndarray-fill` to fix `npm audit` vulnerability via @dawidgarus in #17
