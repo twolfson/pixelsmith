@@ -1,4 +1,6 @@
 # pixelsmith changelog
+2.3.0 - Removed `ndarray-fill` to fix `npm audit` vulnerability via @dawidgarus in #17
+
 2.2.2 - Moved to Node.js>=8 to fix Travis CI
 
 2.2.1 - Moved to Node.js>=4 to fix Travis CI
