@@ -42,4 +42,11 @@ describe('pixelsmith', function () {
       });
     });
   });
+
+  // DEV: Written for https://github.com/twolfson/pixelsmith/issues/16
+  describe.only('loading a JPEG as a `.png`', function () {
+    it('outputs a reasonable error', function () {
+      console.log('hi');
+    });
+  });
 });
