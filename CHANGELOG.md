@@ -1,4 +1,6 @@
 # pixelsmith changelog
+2.2.2 - Moved to Node.js>=8 to fix Travis CI
+
 2.2.1 - Moved to Node.js>=4 to fix Travis CI
 
 2.2.0 - Added support for Vinyl@2
