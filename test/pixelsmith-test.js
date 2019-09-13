@@ -44,9 +44,13 @@ describe('pixelsmith', function () {
   });
 
   // DEV: Written for https://github.com/twolfson/pixelsmith/issues/16
-  describe.only('loading a JPEG as a `.png`', function () {
-    it('outputs a reasonable error', function () {
-      console.log('hi');
+  describe.only('loading a JPEG with `.png` extension', function () {
+    it('outputs a reasonable error', function (done) {
+      this.engine.createImage(__dirname + '/expected-files/jpeg-wrong-extension.png',
+          function handleCreateImage (err, imgs) {
+        console.log(err);
+        done();
+      });
     });
   });
 });
