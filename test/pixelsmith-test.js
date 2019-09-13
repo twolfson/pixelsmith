@@ -44,11 +44,12 @@ describe('pixelsmith', function () {
   });
 
   // DEV: Written for https://github.com/twolfson/pixelsmith/issues/16
-  describe.only('loading a JPEG with `.png` extension', function () {
+  describe('loading a JPEG with `.png` extension', function () {
     it('outputs a reasonable error', function (done) {
-      this.engine.createImage(__dirname + '/expected-files/jpeg-wrong-extension.png',
+      this.engine.createImage(__dirname + '/test-files/jpeg-wrong-extension.png',
           function handleCreateImage (err, imgs) {
-        console.log(err);
+        assert(err.message.match('jpeg-wrong-extension.png'));
+        assert(err.stack.match('jpeg-wrong-extension.png'));
         done();
       });
     });
