@@ -40,9 +40,9 @@
     "foundry": "~4.3.2",
     "foundry-release-git": "~2.0.2",
     "foundry-release-npm": "~2.0.2",
-    "jscs": "~1.7.3",
+    "jscs": "~3.0.7",
     "jshint": "~2.5.10",
-    "mocha": "~1.21.4",
+    "mocha": "~9.1.1",
     "spritesmith-engine-test": "~5.0.0",
     "twolfson-style": "~1.6.0"
   },
