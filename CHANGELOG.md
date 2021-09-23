@@ -1,4 +1,6 @@
 # pixelsmith changelog
+2.5.0 - Added support for `options.concurrentFileLimit`. Fixes #20
+
 2.4.1 - Removed accidental double callback from `getPixels`
 
 2.4.0 - Added filepath info to when invalid file extension loaded. Fixes #16
