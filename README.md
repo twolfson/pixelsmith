@@ -49,6 +49,13 @@ This module was built to the specification for spritesmith engines.
 
 https://github.com/twolfson/spritesmith-engine-spec/tree/2.0.0
 
+### `Engine(options)`
+Our `engine` constructor supports the following options:
+
+- options `Object` - Optional container for various settings
+    - concurrentFileLimit `Number` - Amount of files to load concurrently via `createImages`
+        - May be useful if bumping into `EMFILE` (file descriptor limit)
+
 ### `engine.createImages(images, cb)`
 Our `createImages` methods supports the following types of images:
 
