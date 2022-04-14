@@ -27,7 +27,7 @@
     "test": "npm run precheck && mocha --reporter dot && npm run lint"
   },
   "dependencies": {
-    "async": "~0.9.0",
+    "async": "^3.2.3",
     "concat-stream": "~1.5.1",
     "get-pixels": "~3.3.0",
     "mime-types": "~2.1.7",
