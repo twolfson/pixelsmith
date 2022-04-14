@@ -1,4 +1,6 @@
 # pixelsmith changelog
+2.6.0 - Upgraded `async` via @xfix in #21 and moved to Node.js>=12 to fix Travis CI
+
 2.5.0 - Added support for `options.concurrentFileLimit`. Fixes #20
 
 2.4.1 - Removed accidental double callback from `getPixels`
