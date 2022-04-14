@@ -1,4 +1,4 @@
-# pixelsmith [![Build status](https://travis-ci.org/twolfson/pixelsmith.png?branch=master)](https://travis-ci.org/twolfson/pixelsmith)
+# pixelsmith [![Build Status](https://app.travis-ci.com/twolfson/pixelsmith.svg?branch=master)](https://app.travis-ci.com/twolfson/pixelsmith)
 
 Node based engine for [spritesmith][] built of top of [get-pixels][] and [save-pixels][].
 
